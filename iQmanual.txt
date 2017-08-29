@@ -1,0 +1,12 @@
+﻿Welcome to iQ!
+
+	This short user manual will explain how to use iQ for your own simulation of queue lines. Be sure to read the read me in order to understand the fully.
+
+	This program is a simulation of a queuing system and server which gives statistics about the length of the queue and the server's ability to effectively process those in it. Based on an MM1 queuing system, the “customers” will enter the queue following an exponential distribution that can be governed by the user (see the read me). Every one of those customers will have a specific amount of time necessary to service them which also follows an exponential distribution governed by the user.
+
+	What makes this simulation special is the use of POSIX threads for the creation of the users and their processing. For the uninitiated, POSIX threads can be used to run several functions at the same time (and the same function multiple times at once). In this way, a simulation like iQ can be completed.
+
+	To run iQ, please simply follow the read me. There is no user interaction available after the program is run so this manual will be very short. Simply, to run iQ, one simply needs to navigate to the containing folder and run a command such as “./iQ”, without the quotes. If the user would prefer to change options before running the simulation, the user must use the options better described in the read me file. An option is done by making a hyphen “-” followed immediately by the option requested. Following this, the user needs to supply the value of the option they wish to use. For example “-T 100”,  (without quotes) will change the number of customers in this simulation to 100. The full command for this would be as follows:
+“./iQ -T 100”
+
+	For any further information regarding this simulation and its implementations, pleaser refer to the read me. I hope you enjoy the queuing system simulation as much as I enjoyed coding it. Thanks for giving it a go.
